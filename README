@@ -7,7 +7,7 @@ Added :disable option to image_submit_tag helper, which functions like :disable_
 Example
 =======
 
-Example goes here.
-
+image_submit_tag("submit.png", :disable => true)
+# => <input onclick="this.setAttribute('originalValue', this.value);this.disabled = true;result = (this.form.onsubmit ? (this.form.onsubmit() ? this.form.submit() : false) : this.form.submit());if (result == false) { this.disabled = false; }return result;" src="/images/rails.png" type="image" /> 
 
 Copyright (c) 2010 Junya Ishihara, released under the MIT license
