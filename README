@@ -1,0 +1,13 @@
+ImageSubmitTagExt
+=================
+
+Added :disable option to image_submit_tag helper, which functions like :disable_with option of submit_tag, prevents the submit button being pressed when the form is submitted.
+
+
+Example
+=======
+
+Example goes here.
+
+
+Copyright (c) 2010 Junya Ishihara, released under the MIT license
