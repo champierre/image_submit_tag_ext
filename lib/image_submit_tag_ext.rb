@@ -24,7 +24,7 @@ module ActionView
         if disable = options.delete("disable")
           onclick = "#{options.delete('onclick')};" if options['onclick']
 
-          options["onclick"] = "this.setAttribute('originalValue', this.value);this.disabled = true;#{onclick}"
+          options["onclick"] = "this.disabled = true;#{onclick}"
           options["onclick"] << "result = (this.form.onsubmit ? (this.form.onsubmit() ? this.form.submit() : false) : this.form.submit());"
           options["onclick"] << "if (result == false) { this.disabled = false; }return result;"
         end

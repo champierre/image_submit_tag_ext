@@ -8,6 +8,6 @@ Example
 =======
 
 image_submit_tag("submit.png", :disable => true)
-# => <input onclick="this.setAttribute('originalValue', this.value);this.disabled = true;result = (this.form.onsubmit ? (this.form.onsubmit() ? this.form.submit() : false) : this.form.submit());if (result == false) { this.disabled = false; }return result;" src="/images/rails.png" type="image" /> 
+# => <input onclick="this.disabled = true;result = (this.form.onsubmit ? (this.form.onsubmit() ? this.form.submit() : false) : this.form.submit());if (result == false) { this.disabled = false; }return result;" src="/images/submit.png" type="image" /> 
 
 Copyright (c) 2010 Junya Ishihara, released under the MIT license
